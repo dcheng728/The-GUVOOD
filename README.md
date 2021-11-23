@@ -17,7 +17,7 @@ This repository contains the Grasps Unver Varied Object Orientation (GUVOOD) dat
 
 
 ## Organization of the dataset
-In side the "experimental data" folder contains images captured from the grasp experiments. A total of 60 objects are grasped, 28 grasper subjects participated, and each object is grasped 8 times by each subject. During the experiments, the sixty objects are broken down into six groups of ten. The "meta_data.py" file contains information about how these groups are separated. 
+Inside the "experimental data" folder contains images captured from the grasp experiments. A total of 60 objects are grasped, 28 grasper subjects participated, and each object is grasped 8 times by each subject. During the experiments, the sixty objects are broken down into six groups of ten. The "meta_data.py" file contains information about how these groups are separated. 
 
 For every grasp, three things are being recorded: an image of the grasp, a 3D transformation of the grasp, and whether the grasp succeed. The images of the grasps are saved under the "image/" directory under each subject in "experimental data/", the wrist transformations are registered and saved in batch by group, (i.e experiment data/10-cz/first group.npy will contain all wrist transformations in the second group of objects for this subject in order), the success/failure of a grasp is recorded in the wrist transformation (the failed grasps' transformation is recorded as a 4x4 matrix full of 0s). 
 
